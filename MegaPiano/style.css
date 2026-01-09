@@ -1,0 +1,66 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+#piano {
+  position: relative;
+  width: max-content;
+  display: flex;
+  user-select: none;
+}
+
+.whitekey {
+  width: 40px;
+  height: 200px;
+  background: white;
+  border: 1px solid #333;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  margin-right: -1px;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.whitekey:active {
+  background: #ddd; 
+}
+
+.blackkey {
+  display: flex;
+  width: 25px;
+  height: 120px;
+  background: black;
+  color: white;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  position: absolute;
+  z-index: 2;
+  margin-left: -12.5px; 
+  border-radius: 0 0 3px 3px;
+  cursor: pointer;
+  transition: background 0.1s;
+  
+}
+
+.blackkey:active {
+  background: #444;
+}
+
